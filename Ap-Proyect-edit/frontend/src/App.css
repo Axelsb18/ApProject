@@ -1,0 +1,189 @@
+/* En esta esta todo el sistema contenido incluyendo navar, pie de pagina */
+.principal {
+  background-color: rgb(246, 246, 246);
+  color: rgb(0, 0, 0);
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.piePagina {
+  background-color: #1e1c1c;
+  min-height: 10vh;
+  padding: 6vh;
+}
+.piePagina a {
+  color: #085fb7;
+  margin-right: 1em;
+  margin-left: 1em;
+  text-align: center;
+}
+
+h3 {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.logo-icon {
+  width: 50px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: auto; /* Permite que la altura se ajuste proporcionalmente */
+}
+
+.singleImage {
+  border-top: 2vh solid transparent;
+  border-bottom: 5vh solid transparent;
+}
+
+button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: 2px solid #085fb7;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  transition: 1s ease-in-out;
+  border-radius: 8px;
+}
+button:hover {
+  transition: 0.5s ease-in-out;
+  background: #085fb7;
+}
+button span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.button-search {
+  height: 40px;
+  padding: 5px 20px;
+}
+
+.input-search {
+  height: 40px;
+}
+
+input {
+  background-color: transparent;
+  color: rgb(2, 2, 2);
+  border: 2px solid #085fb7;
+  padding: 10px 10px;
+  border-radius: 50px;
+}
+
+.space {
+  margin: 50px;
+}
+
+.buttonDelete {
+  background-color: rgb(245, 11, 11);
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+.buttonDelete:hover {
+  transition: 1s ease-in-out;
+  background: red;
+}
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(20vh, auto);
+  grid-gap: 0.5vh; /* Ajusta el valor para reducir el espacio entre las celdas */
+  column-gap: 0.5vh; /* Ajusta el valor para reducir el espacio entre las columnas */
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+
+.imgSingle{
+  max-height: 75vh;
+  max-width: 60vh;
+}
+
+
+@media (max-width: 992px) {
+  .img-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .img-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.img-gallery img {
+  max-width: 70%;
+  max-height: 70%;
+  cursor: pointer;
+  transition: 1s;
+  margin: 10px auto;
+}
+.img-gallery img:hover {
+  transform: scale(1.1);
+}
+
+.singleImage {
+  background-color: #ffffff;
+  width: 60vh;
+  height: 45vh;
+  margin: 2vh;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.singleImage .price {
+  position: absolute;
+  bottom: 0;
+  left: 1.5rem;
+}
+
+.singleImage .name {
+  position: absolute;
+  bottom: 30px; /* margen para separar del precio */
+  left: 1.5rem;
+  margin-top: 10px; /* margen para evitar el traslape */
+}
+
+.singleImage button {
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .principal {
+    max-width: 100vh;
+  }
+}
+
+.cart-image {
+  width: 125px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.cart-price {
+  width: 0px;
+}
+
+.offcanvas{
+  width:50% !important;
+}  
